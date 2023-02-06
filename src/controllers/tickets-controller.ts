@@ -3,7 +3,7 @@ import ticketService from "@/services/tickets-service";
 import { Response } from "express";
 import httpStatus from "http-status";
 
-export async function getTicketTypes(req: AuthenticatedRequest, res: Response) {
+export async function fetchTicketTypes(req: AuthenticatedRequest, res: Response) {
   try {
     const ticketTypes = await ticketService.getTicketTypes();
 
